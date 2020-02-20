@@ -1,16 +1,17 @@
 import random, time, copy
 
 def listPrint(list):
+    lastItem = len(list)-1    
     if list != []:
-        for i in list:
-            if i == list[-1]:
+        for index, i in enumerate(list):
+            if index == lastItem:
                 print ("and " + i)
             else:
                 print(i + " ", end='')
     else:
         print ("List is empty")
 
-sports = ['baseball', 'basketball', 'football', 'hockey']
+sports = ['baseball', 'basketball', 'football', 'hockey', 'hockey']
 colors = ['red', 'blue', 'yellow']
 blank = []
 listPrint(sports)
