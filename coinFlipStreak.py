@@ -27,9 +27,9 @@ def main():
         totalStreaks = totalStreaks + experiment
     print("Total Streaks: " + str(totalStreaks))
     print('Chance of streak: %s%%' % (totalStreaks / (10000)))
-        
-main()
-# Code that checks if there is a streak of 6 heads or tails in a row.
+
+if __name__ == "__main__":
+    main()
 
 
 
